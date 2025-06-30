@@ -1,0 +1,114 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+@font-face {
+  font-family: Cocogoose;
+  src: url(./assets/Cocogoose-Compressed-Regular-trial.woff);
+}
+
+@tailwind utilities;
+
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-background: #fffef6;
+  --color-body: #282828;
+
+  --color-p-red:#FFADAD;
+  --color-p-orange: #FFD6A5;
+  --color-p-yellow: #FDFFB6;
+  --color-p-green: #CAFFBF;
+  --color-p-blue: #9BF6FF;
+  --color-p-indigo: #A0C4FF;
+  --color-p-violet: #BDB2FF;
+}
+    
+
+@layer base {
+
+  html {
+    margin-left: 3rem;
+    margin-right: 3rem; 
+  }
+
+  body {
+    background-color: #fffef6;
+    color: #282828;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    @apply flex justify-center align-middle hover:font-bold transition-all 
+    w-15 align-middle hover:cursor-pointer
+  }
+}
+
+@layer components {
+  .bar {
+    @apply fixed h-20 flex justify-center items-center p-5 w-full z-50 bg-background;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .icon {
+    @apply bg-[#282828] h-auto w-auto p-2 rounded-full
+  }
+
+  .button {
+    @apply h-auto w-fit py-2 px-4 flex gap-2 bg-body 
+    text-background text-[12px] rounded-full justify-center
+    hover:ring-3 hover:text-body hover:bg-p-red transition-all
+    font-bold hover:cursor-pointer
+  }
+
+  .tile {
+    @apply flex flex-col justify-center align-middle gap-2 p-5 border-3
+    w-26 text-[12px] rounded-2xl
+  }
+
+  .proj-title {
+    @apply flex flex-col items-center justify-center 
+      absolute bottom-0 left-0 font-bold w-full h-12 bg-background 
+      transition-all duration-300 ease-in-out group-hover:h-full
+      border-3 rounded-3xl align-middle text-[16px]
+  }
+
+  .proj-description {
+    @apply opacity-0 mt-2 transition-opacity duration-300 
+    group-hover:opacity-100 text-center px-10
+  }
+
+  .proj {
+    @apply relative flex flex-col h-fit w-fit rounded-3xl overflow-hidden
+  }
+
+  .tag {
+    @apply border-3 px-5 py-2 rounded-full bg-body text-background 
+    text-[12px] font-bold hover:cursor-pointer hover:text-body transition-all
+  }
+
+  .image {
+    @apply border-3 rounded-3xl
+  }
+}
+
+@layer utilities {
+
+  .font-header {
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: bold;
+  }
+
+  .font-body {
+    font-family: 'Montserrat', sans-serif;
+  }
+}

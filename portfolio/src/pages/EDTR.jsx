@@ -1,21 +1,17 @@
 import { ChevronLeft } from "lucide-react"
 import { Link } from "react-router-dom"
 
-import Portfolio1 from "../assets/OldPortfolio/Portfolio1.png"
-import Portfolio2 from "../assets/OldPortfolio/Portfolio2.png"
-import Portfolio3 from "../assets/OldPortfolio/Portfolio3.png"
-import Portfolio4 from "../assets/OldPortfolio/Portfolio4.png"
+import EDTR1 from "../assets/EDTR/EDTR1.png"
+import EDTR2 from "../assets/EDTR/EDTR2.png"
 import { useState } from "react"
 
-export const Portfolio = () => {
+export const EDTR = () => {
 
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    { src: Portfolio1, alt: "Hero Section" },
-    { src: Portfolio2, alt: "About Section" },
-    { src: Portfolio3, alt: "Projects Section" },
-    { src: Portfolio4, alt: "Contact Section" },
+    { src: EDTR1, alt: "Landing Page" },
+    { src: EDTR2, alt: "Records Page" },
   ];
 
   return (
@@ -25,33 +21,31 @@ export const Portfolio = () => {
         <p>Back</p>
       </Link>
       <div className="flex flex-col justify-center items-center gap-5">
-        <h1 className="font-header text-5xl">Portfolio</h1>
+        <h1 className="font-header text-5xl">Intern E-DTR</h1>
         <p className="w-200 text-center">
-          This website was created as part of my Web Development course. It showcases my 
-          profile, skills, and the projects I worked on during my studies. I developed it 
-          using Visual Studio Code, applying the HTML, CSS, and JavaScript techniques we 
-          learned in class. This was actually my very first website, and I deployed it using 
-          Netlify.
+          I developed this application during my internship at the Development 
+          Academy of the Philippines (DAP). It is designed to record the entry and exit 
+          times of interns at DAP, providing a streamlined and efficient way to manage 
+          attendance. This also includes features for tracking work hours and generating reports,
+          ensuring accurate records of intern activities. I did this in collaboration with my 
+          fellow interns, and it was a valuable experience in applying my skills in a real-world setting.
         </p>
         <div>
           <ul>
             <li className="flex gap-2">
-              <p className="tag hover:bg-p-blue">HTML</p>
-              <p className="tag hover:bg-p-orange">CSS</p>
-              <p className="tag hover:bg-p-yellow">JavaScript</p>
-              <p className="tag hover:bg-p-blue">ReactJS</p>
-              <p className="tag hover:bg-p-indigo">VS Code</p>
+              <p className="tag hover:bg-p-violet">Power Apps</p>
+              <p className="tag hover:bg-p-blue">Power Automate</p>
             </li>
           </ul>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-10 mx-auto">
+      <div className="grid grid-cols-2 gap-10 w-auto mx-auto">
         {images.map((img, index) => (
           <img
             key={index}
             src={img.src}
             alt={img.alt}
-            className="image cursor-pointer hover:scale-105 transition-transform duration-200"
+            className="image h-100 cursor-pointer hover:scale-105 transition-transform duration-200"
             onClick={() => setSelectedImage(img)}
           />
         ))}

@@ -20,7 +20,7 @@ export const Projects = () => {
           </p>
         </div>
       </Link>
-      <Link to="/project-1" className="proj group">
+      <Link to="/mobile-app-prototype" className="proj group">
         <img src={Prototype} alt="Prototype" className="rounded-3xl border-3"/>
         <div className="proj-title font-body group-hover:bg-p-orange">
           <h3 className="absolute group-hover:opacity-0 transition-all">Mobile App Prototype</h3>
@@ -30,7 +30,7 @@ export const Projects = () => {
           </p>
         </div>
       </Link>
-      <Link to="/project-1" className="proj group">
+      <Link to="/interns-edtr" className="proj group">
         <img src={EDTR} alt="Interns E-DTR" className="rounded-3xl border-3"/>
         <div className="proj-title font-body group-hover:bg-p-yellow">
           <h3 className="absolute group-hover:opacity-0 transition-all">Interns E-DTR</h3>
@@ -40,7 +40,7 @@ export const Projects = () => {
           </p>
         </div>
       </Link>
-      <Link to="/project-1" className="proj group">
+      <Link to="/inventory-tracker" className="proj group">
         <img src={Inventory} alt="Inventory" className="rounded-3xl border-3"/>
         <div className="proj-title font-body group-hover:bg-p-green">
           <h3 className="absolute group-hover:opacity-0 transition-all">Inventory Tracker</h3>
@@ -49,7 +49,7 @@ export const Projects = () => {
           </p>
         </div>
       </Link>
-      <Link to="/project-1" className="proj group">
+      <Link to="/gate-pass-user" className="proj group">
         <img src={Bearer} alt="Gate Pass - Bearer" className="rounded-3xl border-3"/>
         <div className="proj-title font-body group-hover:bg-p-blue">
           <h3 className="absolute group-hover:opacity-0 transition-all">Gate Pass System (User)</h3>
@@ -58,7 +58,7 @@ export const Projects = () => {
           </p>
         </div>
       </Link>
-      <Link to="/project-1" className="proj group">
+      <Link to="/gate-pass-admin" className="proj group">
         <img src={Admin} alt="Gate Pass - Admin" className="rounded-3xl border-3"/>
         <div className="proj-title font-body group-hover:bg-p-violet">
           <h3 className="absolute group-hover:opacity-0 transition-all">Gate Pass System (Admin)</h3>

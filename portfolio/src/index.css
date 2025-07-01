@@ -77,14 +77,15 @@
 
   .proj-title {
     @apply flex flex-col items-center justify-center 
-      absolute bottom-0 left-0 font-bold w-full h-12 bg-background 
+      absolute bottom-0 left-0 font-bold w-full h-12 bg-body 
       transition-all duration-300 ease-in-out group-hover:h-full
-      border-3 rounded-3xl align-middle text-[16px]
+      border-3 rounded-3xl align-middle text-[16px] text-background
+      border-body
   }
 
   .proj-description {
     @apply opacity-0 mt-2 transition-opacity duration-300 
-    group-hover:opacity-100 text-center px-10
+    group-hover:opacity-100 text-center px-10 text-body
   }
 
   .proj {

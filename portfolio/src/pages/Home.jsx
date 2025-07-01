@@ -44,27 +44,27 @@ export const Home = () => {
         <div>
           <h1 className="text-center mb-5 font-header text-3xl">Tech Stack</h1>
           <div className="grid grid-cols-3 gap-10">
-            <div className="tile hover:bg-p-blue transition-all">
+            <div className="tile hover:bg-p-blue transition-all hover:scale-110 duration-200">
               <img src={HTML} className="h-15"></img>
               <p className="text-center">HTML</p>
             </div>
-            <div className="tile hover:bg-p-orange transition-all">
+            <div className="tile hover:bg-p-orange transition-all hover:scale-110 duration-200">
               <img src={CSS} className="h-15"></img>
               <p className="text-center">CSS</p>
             </div>
-            <div className="tile hover:bg-p-yellow transition-all">
+            <div className="tile hover:bg-p-yellow transition-all hover:scale-110 duration-200">
               <img src={JS} className="h-15"></img>
               <p className="text-center">JavaScript</p>
             </div>
-            <div className="tile hover:bg-p-blue transition-all">
+            <div className="tile hover:bg-p-blue transition-all hover:scale-110 duration-200">
               <img src={ReactJS} className="h-15"></img>
               <p className="text-center">ReactJS</p>
             </div>
-            <div className="tile hover:bg-p-yellow transition-all">
+            <div className="tile hover:bg-p-yellow transition-all hover:scale-110 duration-200">
               <img src={Python} className="h-15"></img>
               <p className="text-center">Python</p>
             </div>
-            <div className="tile hover:bg-p-blue transition-all">
+            <div className="tile hover:bg-p-blue transition-all hover:scale-110 duration-200">
               <img src={TW} className="h-15"></img>
               <p className="text-center">TailwindCSS</p>
             </div>
@@ -73,27 +73,27 @@ export const Home = () => {
         <div>
           <h1 className="text-center mb-5 font-header text-3xl">Tools</h1>
           <div className="grid grid-cols-3 gap-10">
-            <div className="tile hover:bg-p-blue transition-all">
+            <div className="tile hover:bg-p-blue transition-all hover:scale-110 duration-200">
               <img src={VSC} className="h-15"></img>
               <p className="text-center">VS Code</p>
             </div>
-            <div className="tile hover:bg-p-green transition-all">
+            <div className="tile hover:bg-p-green transition-all hover:scale-110 duration-200">
               <img src={Figma} className="h-15"></img>
               <p className="text-center">Figma</p>
             </div>
-            <div className="tile hover:bg-p-blue transition-all">
+            <div className="tile hover:bg-p-blue transition-all hover:scale-110 duration-200">
               <img src={Canva} className="h-15"></img>
               <p className="text-center">Canva</p>
             </div>
-            <div className="tile hover:bg-p-violet transition-all">
+            <div className="tile hover:bg-p-violet transition-all hover:scale-110 duration-200">
               <img src={PowerApps} className="h-15"></img>
               <p className="text-center">PowerApps</p>
             </div>
-            <div className="tile hover:bg-p-blue transition-all">
+            <div className="tile hover:bg-p-blue transition-all hover:scale-110 duration-200">
               <img src={Automate} className="h-15"></img>
               <p className="text-center">Automate</p>
             </div>
-            <div className="tile hover:bg-p-violet transition-all">
+            <div className="tile hover:bg-p-violet transition-all hover:scale-110 duration-200">
               <img src={Capcut} className="h-15"></img>
               <p className="text-center">Capcut</p>
             </div>

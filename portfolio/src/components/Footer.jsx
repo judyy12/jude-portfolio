@@ -8,11 +8,21 @@ export const Footer = () => {
         <div>
           <ul>
             <li className="flex gap-4">
-              <Link className="w-auto">
+              <Link
+                to="https://www.linkedin.com/in/jude-michael-ba%C3%B1ar-590679291/"
+                className="w-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin size={20} stroke="0" className="icon fill-background 
                 hover:bg-p-blue hover:ring-3 hover:fill-body transition-all"/>
               </Link>
-              <Link className="w-auto">
+              <Link
+                to="https://github.com/judyy12"
+                className="w-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github size={20} stroke="0" className="icon fill-background 
                 hover:bg-p-green hover:ring-3 hover:fill-body transition-all"/>
               </Link>
@@ -20,11 +30,15 @@ export const Footer = () => {
           </ul>
         </div>
         <div>
-          <button className="button">
+          <a
+            href="/JudeBanarCV.pdf"
+            download
+            className="button flex items-center gap-2"
+          >
             <p className="font-bold">Download CV</p>
-          </button>
+          </a>
         </div>
       </div>
     </div>
-    )
+  )
 }

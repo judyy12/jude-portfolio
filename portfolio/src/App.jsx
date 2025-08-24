@@ -12,6 +12,7 @@ import { EDTR } from './pages/EDTR'
 import { Inventory } from './pages/Inventory'
 import { Bearer } from './pages/Bearer'
 import { Admin } from './pages/Admin'
+import { Koffee } from './pages/KoffeeDates'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/inventory-tracker' element={<Inventory />}/>
           <Route path='/gate-pass-user' element={<Bearer />}/>
           <Route path='/gate-pass-admin' element={<Admin />}/>
+          <Route path='/koffee-dates' element={<Koffee />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

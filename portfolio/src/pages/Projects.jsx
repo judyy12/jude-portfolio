@@ -6,10 +6,11 @@ import EDTR from "../assets/EDTR/EDTR.png"
 import Inventory from "../assets/Inventory/Inventory.png"
 import Bearer from "../assets/Bearer/Bearer.png"
 import Admin from "../assets/Admin/Admin.png"
+import Koffee from "../assets/KoffeeDates/KD.png"
 
 export const Projects = () => {
   return (
-    <div className="h-screen grid grid-cols-3 justify-center align-middle mt-25 mb-25 gap-5 ">
+    <div className="min-h-screen grid grid-cols-3 justify-center align-middle mt-25 mb-25 gap-5 ">
       <Link to="/portfolio" className="proj group">
         <img src={Portfolio} alt="Portfolio" className="rounded-3xl border-3"/>
         <div className="proj-title font-body group-hover:bg-p-red">
@@ -64,6 +65,15 @@ export const Projects = () => {
           <h3 className="absolute group-hover:opacity-0 transition-all">Gate Pass System (Admin)</h3>
           <p className="proj-description font-normal">
             App that manages the Gate Passes and requests in DAP.
+          </p>
+        </div>
+      </Link>
+      <Link to="/koffee-dates" className="proj group">
+        <img src={Koffee} alt="Koffee Dates" className="rounded-3xl border-3"/>
+        <div className="proj-title font-body group-hover:bg-p-red">
+          <h3 className="absolute group-hover:opacity-0 transition-all">Koffee Dates</h3>
+          <p className="proj-description font-normal">
+            App for coffee lovers and fore someone that wants to find someone to have a koffee date with.
           </p>
         </div>
       </Link>

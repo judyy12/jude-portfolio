@@ -36,11 +36,11 @@ export const Home = () => {
             A <strong>UI/UX Designer</strong> and <strong>Frontend Web Developer</strong>
           </div>
           <div className="flex justify-center mt-10">
-            <ChevronsDown size={35} />
+            <ChevronsDown size={35} onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })} />
           </div>
         </div>
       </section>
-      <section className="h-fit pb-35 px-20 flex justify-between">
+      <section className="h-fit pb-35 px-20 flex gap-50 justify-center">
         <div>
           <h1 className="text-center mb-5 font-header text-3xl">Tech Stack</h1>
           <div className="grid grid-cols-3 gap-10">
